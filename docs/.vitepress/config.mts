@@ -5,9 +5,9 @@ const PLUGIN_BASE_DIR = 'plugin';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "/devops-velocity-plugin-docs/",
-  title: "DevOps Velocity Plugins",
-  description: "Documentation for IBM DevOps Velocity Plugins",
+  base: "/devops-release-plugin-docs/",
+  title: "DevOps Release Plugins",
+  description: "Documentation for IBM DevOps Release Plugins",
   appearance: "dark",
   lastUpdated: true,
   vite: {
@@ -18,7 +18,7 @@ export default defineConfig({
   },
   themeConfig: {
     editLink: {
-      pattern: 'https://github.com/UrbanCode/devops-velocity-plugin-docs/edit/main/docs/:path'
+      pattern: 'https://github.com/UrbanCode/devops-release-plugin-docs/edit/main/docs/:path'
     },
     search: {
       provider: 'local'
@@ -26,720 +26,196 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     sidebar: {
       // This sidebar gets displayed when a user
-      // is on `plugin/selenium-ucv` directory.
-      [`/${PLUGIN_BASE_DIR}/selenium-ucv/`]: [
+      // is on `plugin/DeployReport` directory.
+      [`/${PLUGIN_BASE_DIR}/DeployReport/`]: [
         {
-          text: 'Selenium', // Updated text
+          text: 'Deployment Reports', // Changed title
           items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/selenium-ucv/README` }
+            { text: 'About', link: `${PLUGIN_BASE_DIR}/DeployReport/README` },
+            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/DeployReport/overview` },
+            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/DeployReport/usage` },
+            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/DeployReport/downloads` },
+            { text: 'Settings', link: `${PLUGIN_BASE_DIR}/DeployReport/settings` } // Other items
           ]
         }
       ],
 
       // This sidebar gets displayed when a user
-      // is on `plugin/testcomplete-ucv` directory.
-      [`/${PLUGIN_BASE_DIR}/testcomplete-ucv/`]: [
+      // is on `plugin/RTC` directory.
+      [`/${PLUGIN_BASE_DIR}/RTC/`]: [
         {
-          text: 'TestComplete', // Updated text
+          text: 'Rational Team Concert v6', // Changed title
           items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/testcomplete-ucv/README` }
+            { text: 'About', link: `${PLUGIN_BASE_DIR}/RTC/README` },
+            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/RTC/overview` },
+            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/RTC/usage` },
+            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/RTC/downloads` },
+            { text: 'Settings', link: `${PLUGIN_BASE_DIR}/RTC/settings` } // Other items
           ]
         }
       ],
 
       // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-agility` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-agility/`]: [
+      // is on `plugin/Rally` directory.
+      [`/${PLUGIN_BASE_DIR}/Rally/`]: [
         {
-          text: 'Digital.ai Agility', // Updated text
+          text: 'Rally', // Changed title
           items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-agility/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-agility/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-agility/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-agility/downloads` }
+            { text: 'About', link: `${PLUGIN_BASE_DIR}/Rally/README` },
+            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/Rally/overview` },
+            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/Rally/usage` },
+            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/Rally/downloads` },
+            { text: 'Settings', link: `${PLUGIN_BASE_DIR}/Rally/settings` } // Other items
           ]
         }
       ],
 
       // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-aha` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-aha/`]: [
+      // is on `plugin/ibm-urbancode-deploy` directory.
+      [`/${PLUGIN_BASE_DIR}/ibm-urbancode-deploy/`]: [
         {
-          text: 'Aha!', // Updated text
+          text: 'IBM UrbanCode Deploy', // Changed title
           items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-aha/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-aha/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-aha/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-aha/downloads` }
+            { text: 'About', link: `${PLUGIN_BASE_DIR}/ibm-urbancode-deploy/README` },
+            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ibm-urbancode-deploy/overview` },
+            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ibm-urbancode-deploy/usage` },
+            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ibm-urbancode-deploy/downloads` },
+            { text: 'Settings', link: `${PLUGIN_BASE_DIR}/ibm-urbancode-deploy/settings` } // Other items
           ]
         }
       ],
 
       // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-appscan` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-appscan/`]: [
+      // is on `plugin/servicenow-4` directory.
+      [`/${PLUGIN_BASE_DIR}/servicenow-4/`]: [
         {
-          text: 'HCL AppScan Enterprise (ASE)', // Updated text
+          text: 'ServiceNow', // Changed title
           items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-appscan/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-appscan/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-appscan/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-appscan/downloads` }
+            { text: 'About', link: `${PLUGIN_BASE_DIR}/servicenow-4/README` },
+            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/servicenow-4/overview` },
+            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/servicenow-4/usage` },
+            { text: 'Steps', link: `${PLUGIN_BASE_DIR}/servicenow-4/steps` }
           ]
         }
       ],
 
       // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-asoc` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-asoc/`]: [
+      // is on `plugin/ucr-jenkins-ci` directory.
+      [`/${PLUGIN_BASE_DIR}/ucr-jenkins-ci/`]: [
         {
-          text: 'HCL AppScan on Cloud (ASoC)', // Updated text
+          text: 'Jenkins for IBM UrbanCode Release', // Changed title
           items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-asoc/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-asoc/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-asoc/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-asoc/downloads` }
+            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucr-jenkins-ci/README` },
+            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucr-jenkins-ci/overview` },
+            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucr-jenkins-ci/usage` },
+            { text: 'Steps', link: `${PLUGIN_BASE_DIR}/ucr-jenkins-ci/steps` },
+            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucr-jenkins-ci/downloads` }
           ]
         }
       ],
 
       // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-azure` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-azure/`]: [
+      // is on `plugin/ucr-plugin-ansible` directory.
+      [`/${PLUGIN_BASE_DIR}/ucr-plugin-ansible/`]: [
         {
-          text: 'Azure DevOps', // Updated text
+          text: 'Ansible Tower', // Changed title
           items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-azure/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-azure/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-azure/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-azure/downloads` }
+            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucr-plugin-ansible/README` },
+            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucr-plugin-ansible/overview` },
+            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucr-plugin-ansible/usage` },
+            { text: 'Steps', link: `${PLUGIN_BASE_DIR}/ucr-plugin-ansible/steps` },
+            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucr-plugin-ansible/downloads` }
           ]
         }
       ],
 
       // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-bitbucket-cloud` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-bitbucket-cloud/`]: [
+      // is on `plugin/ucr-plugin-hp-alm` directory.
+      [`/${PLUGIN_BASE_DIR}/ucr-plugin-hp-alm/`]: [
         {
-          text: 'BitBucket Cloud', // Updated text
+          text: 'HP Quality Center (ALM)', // Changed title
           items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-bitbucket-cloud/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-bitbucket-cloud/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-bitbucket-cloud/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-bitbucket-cloud/downloads` }
+            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucr-plugin-hp-alm/README` },
+            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucr-plugin-hp-alm/overview` },
+            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucr-plugin-hp-alm/downloads` },
+            { text: 'Settings', link: `${PLUGIN_BASE_DIR}/ucr-plugin-hp-alm/settings` } // Other items
           ]
         }
       ],
 
       // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-bitbucket-server` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-bitbucket-server/`]: [
+      // is on `plugin/ucr-plugin-jira` directory.
+      [`/${PLUGIN_BASE_DIR}/ucr-plugin-jira/`]: [
         {
-          text: 'BitBucket Server', // Updated text
+          text: 'Jira for IBM UrbanCode Release', // Changed title
           items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-bitbucket-server/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-bitbucket-server/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-bitbucket-server/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-bitbucket-server/downloads` }
+            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucr-plugin-jira/README` },
+            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucr-plugin-jira/overview` },
+            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucr-plugin-jira/downloads` },
+            { text: 'Settings', link: `${PLUGIN_BASE_DIR}/ucr-plugin-jira/settings` } // Other items
           ]
         }
       ],
 
       // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-blackduck` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-blackduck/`]: [
+      // is on `plugin/ucr-plugin-nolio` directory.
+      [`/${PLUGIN_BASE_DIR}/ucr-plugin-nolio/`]: [
         {
-          text: 'Black Duck', // Updated text
+          text: 'CA Nolio', // Changed title
           items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-blackduck/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-blackduck/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-blackduck/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-blackduck/downloads` }
+            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucr-plugin-nolio/README` },
+            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucr-plugin-nolio/overview` },
+            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucr-plugin-nolio/downloads` }
           ]
         }
       ],
 
       // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-bottleneck-detection` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-bottleneck-detection/`]: [
+      // is on `plugin/ucr-plugin-slack` directory.
+      [`/${PLUGIN_BASE_DIR}/ucr-plugin-slack/`]: [
         {
-          text: 'Bottleneck Detection', // Updated text
+          text: 'Slack for IBM UrbanCode Release', // Changed title
           items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-bottleneck-detection/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-bottleneck-detection/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-bottleneck-detection/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-bottleneck-detection/downloads` }
+            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucr-plugin-slack/README` },
+            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucr-plugin-slack/overview` },
+            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucr-plugin-slack/usage` },
+            { text: 'Steps', link: `${PLUGIN_BASE_DIR}/ucr-plugin-slack/steps` },
+            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucr-plugin-slack/downloads` }
           ]
         }
       ],
 
       // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-build` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-build/`]: [
+      // is on `plugin/ucr-plugin-tfs` directory.
+      [`/${PLUGIN_BASE_DIR}/ucr-plugin-tfs/`]: [
         {
-          text: 'DevOps Build', // Updated text
+          text: 'Microsoft Team Foundation Server (TFS)', // Changed title
           items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-build/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-build/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-build/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-build/downloads` }
+            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucr-plugin-tfs/README` },
+            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucr-plugin-tfs/overview` },
+            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucr-plugin-tfs/downloads` },
+            { text: 'Settings', link: `${PLUGIN_BASE_DIR}/ucr-plugin-tfs/settings` } // Other items
           ]
         }
       ],
 
       // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-circleci` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-circleci/`]: [
+      // is on `plugin/ucr-xl-deploy` directory.
+      [`/${PLUGIN_BASE_DIR}/ucr-xl-deploy/`]: [
         {
-          text: 'CircleCI', // Updated text
+          text: 'XL Deploy', // Changed title
           items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-circleci/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-circleci/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-circleci/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-circleci/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-control` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-control/`]: [
-        {
-          text: 'DevOps Control', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-control/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-control/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-control/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-control/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-coverage-core` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-coverage-core/`]: [
-        {
-          text: 'Code Coverage', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-coverage-core/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-coverage-core/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-coverage-core/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-coverage-core/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-cucumber` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-cucumber/`]: [
-        {
-          text: 'Cucumber', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-cucumber/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-cucumber/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-cucumber/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-cucumber/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-cypress` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-cypress/`]: [
-        {
-          text: 'Cypress', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-cypress/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-cypress/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-cypress/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-cypress/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-dependabot` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-dependabot/`]: [
-        {
-          text: 'GitHub Dependabot', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-dependabot/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-dependabot/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-dependabot/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-dependabot/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-ewm` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-ewm/`]: [
-        {
-          text: 'IBM Engineering Workflow Management (EWM)', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-ewm/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-ewm/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-ewm/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-ewm/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-fortify-ssc` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-fortify-ssc/`]: [
-        {
-          text: 'Fortify SSC', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-fortify-ssc/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-fortify-ssc/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-fortify-ssc/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-fortify-ssc/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-github` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-github/`]: [
-        {
-          text: 'GitHub', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-github/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-github/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-github/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-github/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-gitlab` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-gitlab/`]: [
-        {
-          text: 'GitLab', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-gitlab/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-gitlab/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-gitlab/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-gitlab/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-handlebars-reporter` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-handlebars-reporter/`]: [
-        {
-          text: 'Handlebar Reporter', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-handlebars-reporter/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-handlebars-reporter/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-handlebars-reporter/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-handlebars-reporter/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-jenkins` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-jenkins/`]: [
-        {
-          text: 'Jenkins', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-jenkins/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-jenkins/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-jenkins/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-jenkins/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-jira-service-management` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-jira-service-management/`]: [
-        {
-          text: 'Jira Service Management', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-jira-service-management/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-jira-service-management/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-jira-service-management/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-jira-service-management/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-jira` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-jira/`]: [
-        {
-          text: 'Jira', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-jira/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-jira/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-jira/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-jira/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-jmeter` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-jmeter/`]: [
-        {
-          text: 'Apache JMeter', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-jmeter/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-jmeter/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-jmeter/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-jmeter/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-junit` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-junit/`]: [
-        {
-          text: 'JUnit', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-junit/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-junit/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-junit/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-junit/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-leankit` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-leankit/`]: [
-        {
-          text: 'Planview Leankit', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-leankit/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-leankit/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-leankit/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-leankit/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-milestone-risk-estimator` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-milestone-risk-estimator/`]: [
-        {
-          text: 'Milestone Risk Estimator', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-milestone-risk-estimator/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-milestone-risk-estimator/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-milestone-risk-estimator/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-milestone-risk-estimator/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-njs-unit` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-njs-unit/`]: [
-        {
-          text: 'Njs-Unit', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-njs-unit/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-njs-unit/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-njs-unit/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-njs-unit/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-onetest-server` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-onetest-server/`]: [
-        {
-          text: 'Ucv ext onetest server', // No direct match, keeping original
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-onetest-server/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-onetest-server/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-onetest-server/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-onetest-server/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-onetest` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-onetest/`]: [
-        {
-          text: 'Ucv ext onetest', // No direct match, keeping original
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-onetest/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-onetest/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-onetest/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-onetest/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-plan` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-plan/`]: [
-        {
-          text: 'DevOps Plan', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-plan/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-plan/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-plan/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-plan/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-rally` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-rally/`]: [
-        {
-          text: 'Rally', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-rally/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-rally/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-rally/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-rally/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-release-summary-ibm` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-release-summary-ibm/`]: [
-        {
-          text: 'GenAI summary release-IBM', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-release-summary-ibm/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-release-summary-ibm/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-release-summary-ibm/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-release-summary-ibm/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-release-summary-openai` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-release-summary-openai/`]: [
-        {
-          text: 'GenAI summary release-OpenAI', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-release-summary-openai/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-release-summary-openai/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-release-summary-openai/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-release-summary-openai/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-rtas` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-rtas/`]: [
-        {
-          text: 'Ucv ext rtas', // No direct match, keeping original
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-rtas/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-rtas/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-rtas/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-rtas/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-sap-charm` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-sap-charm/`]: [
-        {
-          text: 'SAP ChaRM', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-sap-charm/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-sap-charm/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-sap-charm/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-sap-charm/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-servicenow` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-servicenow/`]: [
-        {
-          text: 'ServiceNow', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-servicenow/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-servicenow/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-servicenow/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-servicenow/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-shell` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-shell/`]: [
-        {
-          text: 'Shell', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-shell/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-shell/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-shell/usage` },
-            { text: 'Automation task', link: `${PLUGIN_BASE_DIR}/ucv-ext-shell/Automation-task` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-shell/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-snyk` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-snyk/`]: [
-        {
-          text: 'Snyk', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-snyk/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-snyk/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-snyk/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-snyk/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-sonarqube` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-sonarqube/`]: [
-        {
-          text: 'SonarQube', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-sonarqube/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-sonarqube/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-sonarqube/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-sonarqube/downloads` },
-            { text: 'Certificate', link: `${PLUGIN_BASE_DIR}/ucv-ext-sonarqube/certificate` },
-            { text: 'Scripts', link: `${PLUGIN_BASE_DIR}/ucv-ext-sonarqube/scripts` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-testng` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-testng/`]: [
-        {
-          text: 'TestNG', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-testng/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-testng/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-testng/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-testng/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-twistlock` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-twistlock/`]: [
-        {
-          text: 'Twistlock', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-twistlock/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-twistlock/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-twistlock/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-twistlock/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-ucd` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-ucd/`]: [
-        {
-          text: 'DevOps Deploy', // Updated text (assuming UCD maps to DevOps Deploy)
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-ucd/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-ucd/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-ucd/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-ucd/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-versionone` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-versionone/`]: [
-        {
-          text: 'CollabNet VersionOne', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-versionone/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-versionone/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-versionone/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-versionone/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-vs-quality` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-vs-quality/`]: [
-        {
-          text: 'Microsoft Visual Studio Testing', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-vs-quality/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-vs-quality/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-vs-quality/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-vs-quality/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-whitesource` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-whitesource/`]: [
-        {
-          text: 'WhiteSource', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-whitesource/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-whitesource/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-whitesource/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-whitesource/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/ucv-ext-yaml-executor` directory.
-      [`/${PLUGIN_BASE_DIR}/ucv-ext-yaml-executor/`]: [
-        {
-          text: 'YAML Executor', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucv-ext-yaml-executor/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucv-ext-yaml-executor/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucv-ext-yaml-executor/usage` },
-            { text: 'Steps', link: `${PLUGIN_BASE_DIR}/ucv-ext-yaml-executor/steps` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucv-ext-yaml-executor/downloads` }
-          ]
-        }
-      ],
-
-      // This sidebar gets displayed when a user
-      // is on `plugin/urbancode-velocity` directory.
-      [`/${PLUGIN_BASE_DIR}/urbancode-velocity/`]: [
-        {
-          text: 'urbancode-velocity', // Updated text
-          items: [
-            { text: 'About', link: `${PLUGIN_BASE_DIR}/urbancode-velocity/README` },
-            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/urbancode-velocity/overview` },
-            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/urbancode-velocity/usage` },
-            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/urbancode-velocity/downloads` }
+            { text: 'About', link: `${PLUGIN_BASE_DIR}/ucr-xl-deploy/README` },
+            { text: 'Overview', link: `${PLUGIN_BASE_DIR}/ucr-xl-deploy/overview` },
+            { text: 'Usage', link: `${PLUGIN_BASE_DIR}/ucr-xl-deploy/usage` },
+            { text: 'Steps', link: `${PLUGIN_BASE_DIR}/ucr-xl-deploy/steps` },
+            { text: 'Downloads', link: `${PLUGIN_BASE_DIR}/ucr-xl-deploy/downloads` }
           ]
         }
       ]
     },
-
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/UrbanCode/devops-velocity-plugin-docs' }
+      { icon: 'github', link: 'https://github.com/UrbanCode/devops-release-plugin-docs' }
     ],
     footer: {
       copyright: "©️ IBM Corp. 2011, 2017. <br> ©️ HCL Technologies Limited 2018, 2025.",
